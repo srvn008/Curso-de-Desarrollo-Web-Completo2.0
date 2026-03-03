@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+</head>
+
+
+<body>
+
+    <p id="texto">Ejemplo de texto</p>
+
+    <button id="miBotonChingon">Cambiar el textito</button>
+    
+    <p id="segundoparrafo">Javascript es...</p>
+
+    <button id="miSegundoBotonChingon">Cambiar el textito</button>
+    
+    <p id="parrafoVacio"></p>
+
+    <button id="crearParrafo">Crear parrafo</button>
+
+    
+    <script>
+        document.getElementById("miSegundoBotonChingon").onclick=function(){
+            //Esta funcion modifica el texto de la etiqueta p con id texto
+
+            document.getElementById("segundoparrafo").innerHTML=
+            document.getElementById("segundoparrafo").innerHTML +"Javascript es una locura, increible, awesome";
+
+        }
+    </script>
+
+    
+    <script type ="text/javascript">
+        document.getElementById("miBotonChingon").onclick=function(){
+            //Esta funcion modifica el texto de la etiqueta p con id texto
+
+            document.getElementById("texto").innerHTML="Javascript es una herramienta poderosa";
+            
+        }      
+    </script>
+
+    <script type ="text/javascript">
+        document.getElementById("crearParrafo").onclick=function(){
+           
+            document.getElementById("parrafoVacio").innerHTML="<h1>Este parrafo fue creado con javascript</h1>";
+            
+        }      
+    </script>
+
+</body>
+
+
+</html> 
