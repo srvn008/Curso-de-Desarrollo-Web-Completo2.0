@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <title>jQuery</title>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <style>
+
+            #circulo{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background-color:green;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="circulo"></div>
+
+        <script>
+
+            $("#circulo").click(function(){
+
+                $(this).animate({
+                width:"400px",
+                height:"400px",
+                marginLeft:"100px",
+                marginTop:"100px"
+                },2000,function(){
+
+                $(this).css("background-color","red");
+
+                });
+
+            });
+
+        </script>
+
+    </body>
+</html>

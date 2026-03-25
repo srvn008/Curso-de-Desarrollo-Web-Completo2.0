@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+
+        <script src="C:\Users\santi\OneDrive\Documentos\Curso de desarrollo web completo 2.0\5-JQuery\jquery-4.0.0.js"></script>
+        
+        <style type="text/css">
+            #circulo{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px
+            }
+
+            .cuadrado{
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px                
+
+            }   
+        </style>
+
+    </head>
+
+
+    <body>
+        <div id="circulo"></div>
+        <div class="cuadrado"></div>
+        <div class="cuadrado"></div>
+
+        <script type="text/javascript">
+            $("#circulo").click (function()
+            {
+                if ($(this).attr("id")=="circulo")
+                {
+                    alert("Hiciste click sobre un "+$(this).attr("id")); 
+                }else{
+                    alert("Hiciste click sobre un cuadrado");
+                }
+
+            });
+
+        </script>
+
+
+    </body>
+
+
+</html>
